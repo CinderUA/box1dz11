@@ -10,15 +10,15 @@ public class Main {
         Box myBox5 = new Box(10, 2, 15);
 
         ColorBox.OptionsColor color1 = ColorBox.OptionsColor.valueOf("RED");
-        ColorBox.OptionsMaterial material1 = ColorBox.OptionsMaterial.valueOf("CARDBOARD");
+        Box.OptionsMaterial material1 = Box.OptionsMaterial.valueOf("CARDBOARD");
         ColorBox.OptionsColor color2 = ColorBox.OptionsColor.valueOf("GREEN");
-        ColorBox.OptionsMaterial material2 = ColorBox.OptionsMaterial.valueOf("PAPER");
+        Box.OptionsMaterial material2 = Box.OptionsMaterial.valueOf("PAPER");
         ColorBox.OptionsColor color3 = ColorBox.OptionsColor.valueOf("BLUE");
-        ColorBox.OptionsMaterial material3 = ColorBox.OptionsMaterial.valueOf("PLASTIC");
+        Box.OptionsMaterial material3 = Box.OptionsMaterial.valueOf("PLASTIC");
         ColorBox.OptionsColor color4 = ColorBox.OptionsColor.valueOf("ORANGE");
-        ColorBox.OptionsMaterial material4 = ColorBox.OptionsMaterial.valueOf("TEXTILE");
+        Box.OptionsMaterial material4 = Box.OptionsMaterial.valueOf("TEXTILE");
         ColorBox.OptionsColor color5 = ColorBox.OptionsColor.valueOf("YELLOW");
-        ColorBox.OptionsMaterial material5 = ColorBox.OptionsMaterial.valueOf("WOOD");
+        Box.OptionsMaterial material5 = Box.OptionsMaterial.valueOf("WOOD");
 
         myBox1.setDepth(20);
         System.out.println(myBox1.getDepth());

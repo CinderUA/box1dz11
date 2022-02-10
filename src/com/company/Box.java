@@ -1,14 +1,23 @@
 package com.company;
 
-class Box {
+class Box extends ColorBox{
+
     private double height = 10;
     private double depth = 10;
     private double width = 10;
-    private ColorBox.OptionsMaterial material;
+    private OptionsMaterial material;
     private ColorBox.OptionsColor color;
 
     public double count() {
         return width * height * depth;
+    }
+
+    public enum OptionsMaterial {
+        CARDBOARD,
+        PAPER,
+        PLASTIC,
+        TEXTILE,
+        WOOD;
     }
 
     public Box(double width, double height, double depth) {
@@ -16,7 +25,7 @@ class Box {
         this.height = height;
         this.depth = depth;
     }
-    public Box(double width,double height,double depth,ColorBox.OptionsColor color,ColorBox.OptionsMaterial material) {
+    public Box(double width,double height,double depth,ColorBox.OptionsColor color,OptionsMaterial material) {
         this(width, height, depth);
         this.color = color;
         this.material = material;

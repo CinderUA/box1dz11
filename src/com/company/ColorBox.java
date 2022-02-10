@@ -11,11 +11,4 @@ public class ColorBox {
         PURPLE,
         PINK;
     }
-    public enum OptionsMaterial {
-        CARDBOARD,
-        PAPER,
-        PLASTIC,
-        TEXTILE,
-        WOOD;
-    }
 }
