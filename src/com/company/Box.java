@@ -1,6 +1,6 @@
 package com.company;
 
-class Box extends ColorBox{
+class Box{
 
     private double height = 10;
     private double depth = 10;
@@ -25,9 +25,8 @@ class Box extends ColorBox{
         this.height = height;
         this.depth = depth;
     }
-    public Box(double width,double height,double depth,ColorBox.OptionsColor color,OptionsMaterial material) {
+    public Box(double width,double height,double depth,OptionsMaterial material) {
         this(width, height, depth);
-        this.color = color;
         this.material = material;
     }
     public double getHeight(){

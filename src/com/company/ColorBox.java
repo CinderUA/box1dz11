@@ -1,6 +1,6 @@
 package com.company;
 
-public class ColorBox {
+class ColorBox extends Box {
 
     public enum OptionsColor {
         RED,
@@ -10,5 +10,9 @@ public class ColorBox {
         YELLOW,
         PURPLE,
         PINK;
+    }
+
+    public ColorBox(double width, double height, double depth, OptionsMaterial material) {
+        super(width, height, depth, material);
     }
 }
