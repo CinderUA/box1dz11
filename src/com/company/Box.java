@@ -2,11 +2,10 @@ package com.company;
 
 class Box{
 
-    private double height = 10;
-    private double depth = 10;
-    private double width = 10;
-    private OptionsMaterial material;
-    private ColorBox.OptionsColor color;
+    protected double height = 10;
+    protected double depth = 10;
+    protected double width = 10;
+    protected OptionsMaterial material;
 
     public double count() {
         return width * height * depth;
@@ -28,6 +27,9 @@ class Box{
     public Box(double width,double height,double depth,OptionsMaterial material) {
         this(width, height, depth);
         this.material = material;
+        if (width <= 0 || height <= 0 || depth <= 0){
+            throw new NullPointerException();
+        }
     }
     public double getHeight(){
         return height;
@@ -59,4 +61,14 @@ class Box{
             System.out.println("Attention! Number cannot be negative or equal to 0! So we return the previous value:");
         }
     }
+    @Override
+    public String toString() {
+        return "Box{" +
+                "height=" + height +
+                ", depth=" + depth +
+                ", width=" + width +
+                ", material=" + material +
+                '}';
+    }
+
 }

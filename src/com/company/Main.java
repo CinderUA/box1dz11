@@ -8,6 +8,22 @@ public class Main {
         Box myBox3 = new Box(12, 7, 15);
         Box myBox4 = new Box(12, 6, 18);
         Box myBox5 = new Box(10, 2, 15);
+        String str = myBox1.toString();
+        System.out.println(str);
+        System.out.println();
+
+        try{
+            Box();
+        }
+        catch (){
+            
+        }
+
+
+        Box[] box = new Box[3];
+        box[0] = new Box(10, 20, 15);
+        box[1] = new Box(10, 20, 15);
+        box[2] = new Box(10, 20, 15);
 
         ColorBox.OptionsColor color1 = ColorBox.OptionsColor.valueOf("RED");
         Box.OptionsMaterial material1 = Box.OptionsMaterial.valueOf("CARDBOARD");
